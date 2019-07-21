@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i&display=swap');
+
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("/images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    color: white;
+}
+
+@media (max-width: 375px) {
+    html {
+        background-image: url("/images/bg-intro-mobile.png");
+        text-align: center;
+    }
+}
+
+
+.d {
+    display: inline-block;
+    margin-top: 6em;
+    margin-left: 2em;
+}
+
+.left {
+    margin-right: 2em;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media (max-width: 375px) {
+    .left {
+        text-align: center;
+    }
+}
+
+@media (min-width: 376px) {
+    .left {
+        float: left;
+        width: 35%;
+        margin-inline-start: 7em;
+        margin-top: 7em;
+    }
+
+    .left #h1 {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 376px) {
+    .right {
+        float: right;
+        width: 55%;
+    }
+}
+
+
+.right .b1 {
+    text-align: center;
+    border-radius: 6px;
+    padding: 14px 80px;
+    background-color: hsl(248, 32%, 49%);
+    width: 65%;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.right .b1 a {
+    color: white;
+    font-size-adjust: inherit;
+    text-decoration: none;
+}
+
+.right .b2 {
+    margin-top: 2em;
+    border-radius: 6px;
+    padding: 14px 80px;
+    background-color: white;
+    width: 65%;
+    color: hsl(246, 25%, 77%);
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+input[type=text] {
+    width: 105%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border-color: hsl(246, 25%, 77%);
+    font-weight: 700;
+    color: hsl(248, 32%, 49%);
+    border-style: groove;
+}
+
+input[type=text]:focus {
+    border: 3px solid hsl(249, 10%, 26%);
+}
+
+input[type=button] {
+    width: 105%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-weight: 700;
+}
+
+.right .b2 #agree {
+    font-weight: 100
+}
+
+.right .b2 #agree #red {
+    color: hsl(0, 100%, 74%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 10em;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
