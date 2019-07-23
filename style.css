@@ -111,6 +111,10 @@ input[type=submit] {
     font-weight: 700;
 }
 
+input[type=submit]{
+    cursor: pointer;
+}
+
 .right .b2 #agree {
     font-weight: 100
 }
@@ -128,3 +132,4 @@ input[type=submit] {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
