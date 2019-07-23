@@ -4,10 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <title>Frontend Mentor | Intro component with sign up form</title>
   <link rel="stylesheet" href="style.css" class="css">
   <script src="main.js"></script>
@@ -28,11 +25,16 @@
         <a href="#"><b>Try it free 7 days</b> then $20/mo. thereafter</a>
       </div>
       <div class="b2">
-        <form id="form" name="registration" onSubmit="return formValidation();">
-          <input type="text" placeholder="First Name">
-          <input type="text" placeholder="Last Name">
-          <input type="text" placeholder="Email Address">
-          <input type="text" placeholder="Password">
+        <form id="form">
+          <input type="text" id="fname" placeholder="First Name">
+          <span id="errorAlert1">First Name cannot be empty</span>
+          <input type="text" placeholder="Last Name" id="lname">
+          <span id="errorAlert2">Last Name cannot be empty</span>
+          <input type="text" placeholder="Email Address" id="email">
+          <span id="errorAlert3">Email Address cannot be empty</span>
+          <span id="errorAlert4">Looks like this is not an email</span>
+          <input type="text" placeholder="Password" id="pass">
+          <span id="errorAlert5">Password cannot be empty</span>
           <input type="submit" value="CLAIM YOUR FREE TRIAL">
         </form>
         <span id="agree">By clicking the button, you are agreeing to our <span id="red">Terms and Services</span></span>
