@@ -9,48 +9,48 @@
   <link rel="stylesheet" href="style.css" class="css">
   <script>
     function fvalid() {
-    var fname = document.getElementById("fname");
-    var email = document.getElementById("email");
-    var lname = document.getElementById("lname");
-    var pass = document.getElementById("pass");
-    var x1 = document.getElementById("errorAlert1");
-    var x2 = document.getElementById("errorAlert2");
-    var x1 = document.getElementById("errorAlert3");
-    var x2 = document.getElementById("errorAlert4");
-    var x1 = document.getElementById("errorAlert5");
-    color = "#ff0000";
-    if (fname.value == " ") {
+      var fname = document.getElementById("fname");
+      var email = document.getElementById("email");
+      var lname = document.getElementById("lname");
+      var pass = document.getElementById("pass");
+      var x1 = document.getElementById("errorAlert1");
+      var x2 = document.getElementById("errorAlert2");
+      var x1 = document.getElementById("errorAlert3");
+      var x2 = document.getElementById("errorAlert4");
+      var x1 = document.getElementById("errorAlert5");
+      color = "#ff0000";
+      if (fname.value == " ") {
         x1.style.display = "block";
         fname.style.borderColor = color;
         return false;
-    }
-    if (lname.value == " ") {
+      }
+      if (lname.value == " ") {
         x2.style.display = "block";
         lname.style.borderColor = color;
         return false;
-    }
-    if (email.value == " ") {
+      }
+      if (email.value == " ") {
         x3.style.display = "block";
         email.style.borderColor = color;
         return false;
-    }
-    if (email.value.indexOf("@", 0) < 0) {
+      }
+      if (email.value.indexOf("@", 0) < 0) {
         x4.style.display = "block";
         email.style.borderColor = color;
         return false;
-    }
-    if (email.value.indexOf(".", 0) < 0) {
+      }
+      if (email.value.indexOf(".", 0) < 0) {
         x4.style.display = "block";
         email.style.borderColor = color;
         return false;
-    }
-    if (pass.value == " ") {
+      }
+      if (pass.value == " ") {
         x5.style.display = "block";
         pass.style.borderColor = color;
         return false;
+      }
+      return true;
     }
-    return true;
-}
   </script>
 
 </head>
@@ -86,10 +86,10 @@
 
     </div>
   </div>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Dipanshu Agarwal</a>.
-    </p>
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Dipanshu Agarwal</a>.
+  </p>
 </body>
 
 </html>

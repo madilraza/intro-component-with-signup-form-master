@@ -111,7 +111,7 @@ input[type=submit] {
     font-weight: 700;
 }
 
-input[type=submit]{
+input[type=submit] {
     cursor: pointer;
 }
 
@@ -133,31 +133,35 @@ input[type=submit]{
     color: hsl(228, 45%, 44%);
 }
 
-.d .right .b2 #errorAlert1{
+.d .right .b2 #errorAlert1 {
     font-style: italic;
     color: red;
     font-size: 14px;
     display: none;
 }
-.d .right .b2 #errorAlert2{
+
+.d .right .b2 #errorAlert2 {
     font-style: italic;
     color: red;
     font-size: 14px;
     display: none;
 }
-.d .right .b2 #errorAlert3{
+
+.d .right .b2 #errorAlert3 {
     font-style: italic;
     color: red;
     font-size: 14px;
     display: none;
 }
-.d .right .b2 #errorAlert4{
+
+.d .right .b2 #errorAlert4 {
     font-style: italic;
     color: red;
     font-size: 14px;
     display: none;
 }
-.d .right .b2 #errorAlert5{
+
+.d .right .b2 #errorAlert5 {
     font-style: italic;
     color: red;
     font-size: 14px;
