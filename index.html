@@ -18,38 +18,48 @@
       var x3 = document.getElementById("errorAlert3");
       var x4 = document.getElementById("errorAlert4");
       var x5 = document.getElementById("errorAlert5");
+      var x = 0;
+      x1.style.display = "none";
+      x2.style.display = "none";
+      x3.style.display = "none";
+      x4.style.display = "none";
+      x5.style.display = "none";
       color = "#ff0000";
-      if (fname.value == " ") {
+      if (fname.value == "") {
         x1.style.display = "block";
         fname.style.borderColor = color;
-        return false;
+        x = 1;
       }
-      if (lname.value == " ") {
+      if (lname.value == "") {
         x2.style.display = "block";
         lname.style.borderColor = color;
-        return false;
+        x = 1;
       }
-      if (email.value == " ") {
+      if (email.value == "") {
         x3.style.display = "block";
         email.style.borderColor = color;
-        return false;
+        x = 2;
       }
-      if (email.value.indexOf("@", 0) < 0) {
+      if (email.value.indexOf("@", 0) < 0 && x!=2) {
         x4.style.display = "block";
         email.style.borderColor = color;
-        return false;
+        x = 1;
       }
-      if (email.value.indexOf(".", 0) < 0) {
+      if (email.value.indexOf(".", 0) < 0 && x!=2) {
         x4.style.display = "block";
         email.style.borderColor = color;
-        return false;
+        x = 1;
       }
-      if (pass.value == " ") {
+      if (pass.value == "") {
         x5.style.display = "block";
         pass.style.borderColor = color;
+        x = 1;
+      }
+      if (x == 0) {
+        return true;
+      } else {
         return false;
       }
-      return true;
     }
   </script>
 
