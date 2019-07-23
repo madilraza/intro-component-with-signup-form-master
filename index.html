@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Intro component with sign up form</title>
   <link rel="stylesheet" href="style.css" class="css">
-  <script src="main.js"></script>
+  <script src="main.js">  </script>
 
 </head>
 
@@ -25,7 +25,7 @@
         <a href="#"><b>Try it free 7 days</b> then $20/mo. thereafter</a>
       </div>
       <div class="b2">
-        <form id="form">
+        <form id="form" name="registration" onsubmit="return fvalid()">
           <input type="text" id="fname" placeholder="First Name">
           <span id="errorAlert1">First Name cannot be empty</span>
           <input type="text" placeholder="Last Name" id="lname">
