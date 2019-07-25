@@ -18,12 +18,20 @@
       var x3 = document.getElementById("errorAlert3");
       var x4 = document.getElementById("errorAlert4");
       var x5 = document.getElementById("errorAlert5");
+      var x6 = document.getElementById("ei1");
+      var x7 = document.getElementById("ei2");
+      var x8 = document.getElementById("ei3");
+      var x9 = document.getElementById("ei4");
       var x = 0;
       x1.style.display = "none";
       x2.style.display = "none";
       x3.style.display = "none";
       x4.style.display = "none";
       x5.style.display = "none";
+      x6.style.display = "none";
+      x7.style.display = "none";
+      x8.style.display = "none";
+      x9.style.display = "none";
       color1 = 	"#b9b6d3";
       fname.style.borderColor = color1;
       lname.style.borderColor = color1;
@@ -33,31 +41,45 @@
       if (fname.value == "") {
         x1.style.display = "block";
         fname.style.borderColor = color;
+        fname.placeholder = "";
+        x6.style.display = "block";
         x = 1;
       }
       if (lname.value == "") {
         x2.style.display = "block";
         lname.style.borderColor = color;
+        lname.placeholder = "";
+        x7.style.display = "block";
         x = 1;
       }
       if (email.value == "") {
         x3.style.display = "block";
         email.style.borderColor = color;
+        email.placeholder = "";
+        x8.style.display = "block";
         x = 2;
       }
       if (email.value.indexOf("@", 0) < 0 && x!=2) {
         x4.style.display = "block";
         email.style.borderColor = color;
+        email.value = "";
+        email.placeholder = "email@example.com";
+        x8.style.display = "block";
         x = 1;
       }
       if (email.value.indexOf(".", 0) < 0 && x!=2) {
         x4.style.display = "block";
         email.style.borderColor = color;
+        email.value = "";
+        email.placeholder = "email@example.com";
+        x8.style.display = "block";
         x = 1;
       }
       if (pass.value == "") {
         x5.style.display = "block";
         pass.style.borderColor = color;
+        pass.placeholder = "";
+        x9.style.display = "block";
         x = 1;
       }
       if (x == 0) {
@@ -86,13 +108,17 @@
       <div class="b2">
         <form id="form" name="registration" onsubmit="return fvalid()">
           <input type="text" id="fname" placeholder="First Name">
+          <img src="/images/icon-error.svg" id="ei1" align="right">
           <span id="errorAlert1">First Name cannot be empty</span>
           <input type="text" placeholder="Last Name" id="lname">
+          <img src="/images/icon-error.svg" id="ei2" align="right">
           <span id="errorAlert2">Last Name cannot be empty</span>
           <input type="text" placeholder="Email Address" id="email">
+          <img src="/images/icon-error.svg" id="ei3" align="right">
           <span id="errorAlert3">Email Address cannot be empty</span>
           <span id="errorAlert4">Looks like this is not an email</span>
           <input type="text" placeholder="Password" id="pass">
+          <img src="/images/icon-error.svg" id="ei4" align="right"> 
           <span id="errorAlert5">Password cannot be empty</span>
           <input type="submit" value="CLAIM YOUR FREE TRIAL">
         </form>

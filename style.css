@@ -133,37 +133,67 @@ input[type=submit] {
     color: hsl(228, 45%, 44%);
 }
 
+
 .d .right .b2 #errorAlert1 {
     font-style: italic;
     color: red;
-    font-size: 14px;
+    font-size: 12px;
+    display: none;
+    text-align-last: right;
+}
+
+.d .right .b2 #ei1{
+    position: relative;
+    bottom: 42px;
+    display: none;
+}
+
+.d .right .b2 #ei2{
+    position: relative;
+    bottom: 42px;
+    display: none;
+}
+
+.d .right .b2 #ei3{
+    position: relative;
+    bottom: 42px;
+    display: none;
+}
+
+.d .right .b2 #ei4{
+    position: relative;
+    bottom: 42px;
     display: none;
 }
 
 .d .right .b2 #errorAlert2 {
     font-style: italic;
     color: red;
-    font-size: 14px;
+    font-size: 12px;
     display: none;
+    text-align-last: right;
 }
 
 .d .right .b2 #errorAlert3 {
     font-style: italic;
     color: red;
-    font-size: 14px;
+    font-size: 12px;
     display: none;
+    text-align-last: right;
 }
 
 .d .right .b2 #errorAlert4 {
     font-style: italic;
     color: red;
-    font-size: 14px;
+    font-size: 12px;
     display: none;
+    text-align-last: right;
 }
 
 .d .right .b2 #errorAlert5 {
     font-style: italic;
     color: red;
-    font-size: 14px;
+    font-size: 12px;
     display: none;
+    text-align-last: right;
 }
